@@ -1,0 +1,11 @@
+$.ajax
+    url: 'http://api.wunderground.com/api/36b799dc821d5836/conditions/q/PA/Chicago.json'
+    dataType: 'jsonp'
+    data: 'url'
+    success: (data) ->
+        for index, result of data
+                temp = Math.round result.temp_f
+                icon = result.icon_url
+                weather = result.weather
+                $('p.currentConditions').html "Currently  #{temp} &deg; F and #{weather}"
+                $('div.currentIconToBeDisplayed').html "<img src='#{icon}' >"

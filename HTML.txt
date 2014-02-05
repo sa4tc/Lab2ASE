@@ -1,0 +1,5 @@
+<h1> this is ASE lab 2 Assignment</h1>
+<div class="findWeatherConditions">
+<p class="currentConditions"></p>
+<div class="currentIconToBeDisplayed"></div>
+</div>
